@@ -1,6 +1,7 @@
 #include<iostream>
 #include <stdlib.h>
 #include<windows.h>
+#include "arely.h"
 #include "Cafetera.cpp"
 using namespace std;
 
@@ -9,16 +10,26 @@ int main(){
 	char r1,r2,r3,r4;
 	Cafetera hg("Oster","B071K9BB95","Negro"),hc,hf(3000);
 	//Cafetera ;
-	system("color 0B");
+	system("color 0E");
 	do{
 		system("cls");
-	cout<<"Menu\n1.Usar cafetera vacia\n2.Usar cafetera nueva\n3.Usar cafetera llena\n";
+	gotoxy(40,1);cout<<"Menu";
+	gotoxy(31,2);cout<<"1.Usar cafetera vacia";
+	gotoxy(31,3);cout<<"2.Usar cafetera nueva";
+	gotoxy(31,4);cout<<"3.Usar cafetera llena";
+	gotoxy(31,5);cout<<"";
 	cin>>opc;
 	switch(opc){
 		
 	case 1: do{
 			system("cls");
-			cout<<"Seleccione una opcion: \n1.Llenar cafetera.\n2.Servir taza\n3.Agregar cafe\n4.Mostrar cafetera\n5.Vaciar cafetera\n";
+			gotoxy(33,1);cout<<"Seleccione una opcion:";
+			gotoxy(35,2);cout<<"1.Llenar cafetera.";
+			gotoxy(35,3);cout<<"2.Servir taza.";
+			gotoxy(35,4);cout<<"3.Agregar cafe.";
+			gotoxy(35,5);cout<<"4.Mostrar cafetera.";
+			gotoxy(35,6);cout<<"5.Vaciar cafetera.";
+			gotoxy(35,7);cout<<"";
 			cin>>opc1;
 			switch(opc1){
 				case 1: hg.llenarCafetera();
@@ -54,7 +65,13 @@ int main(){
 			
 			do{
 				system("cls");
-				cout<<"Seleccione una opcion: \n1.Llenar cafetera.\n2.Servir taza\n3.Agregar cafe\n4.Mostrar cafetera\n5.Vaciar Cafetera\n";
+				gotoxy(33,1);cout<<"Seleccione una opcion:";
+				gotoxy(35,2);cout<<"1.Llenar cafetera.";
+				gotoxy(35,3);cout<<"2.Servir taza.";
+				gotoxy(35,4);cout<<"3.Agregar cafe.";
+				gotoxy(35,5);cout<<"4.Mostrar cafetera.";
+				gotoxy(35,6);cout<<"5.Vaciar cafetera.";
+				gotoxy(35,7);cout<<"";
 				cin>>opc2;
 				switch(opc2){
 				case 1: hc.llenarCafetera();
@@ -86,7 +103,13 @@ int main(){
 			break;
 	case 3: do{
 			system("cls");
-			cout<<"Seleccione una opcion: \n1.Llenar cafetera.\n2.Servir taza\n3.Agregar cafe\n4.Mostrar cafetera\n5.Vaciar cafetera\n";
+			gotoxy(33,1);cout<<"Seleccione una opcion:";
+			gotoxy(35,2);cout<<"1.Llenar cafetera.";
+			gotoxy(35,3);cout<<"2.Servir taza.";
+			gotoxy(35,4);cout<<"3.Agregar cafe.";
+			gotoxy(35,5);cout<<"4.Mostrar cafetera.";
+			gotoxy(35,6);cout<<"5.Vaciar cafetera.";
+			gotoxy(35,7);cout<<"";
 			cin>>opc3;
 			switch(opc3){
 				case 1: hf.llenarCafetera();

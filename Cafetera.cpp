@@ -1,22 +1,27 @@
 #include<iostream>
 #include<windows.h>
+#include<stdlib.h>
 #include "CafeteraH.h"
 
 using namespace std;
 
 Cafetera::Cafetera(){
-			cout<<"Ingresa una nueva cafetera: \nMarca: \n";
+			system("color 0B");
+			gotoxy(29,1);
+			cout<<"Ingresa una nueva cafetera: ";
+			gotoxy(32,2);
+			cout<<"Marca: ";
 			cin>>Marca;
-			cout<<"Modelo: \n ";
+			gotoxy(32,3);cout<<"Modelo: ";
 			cin>>Modelo;
-			cout<<"Color: \n";
+			gotoxy(32,4);cout<<"Color: ";
 			cin>>Color;
-			cout<<"Capacidad maxima: \n";
+			gotoxy(32,5);cout<<"Capacidad maxima: ";
 			cin>>CapacidadMaxima;
-			cout<<"Capacidad actual: \n";
+			gotoxy(32,6);cout<<"Capacidad actual: ";
 			cin>>CapacidadActual;
 			if(CapacidadMaxima<CapacidadActual){
-			cout<<"Es imposible que la capacidad actual sea mayor a la maxima";
+			gotoxy(15,7);cout<<"Es imposible que la capacidad actual sea mayor a la maxima";
 			CapacidadActual=CapacidadMaxima;
 			Sleep(1000);
 			}
